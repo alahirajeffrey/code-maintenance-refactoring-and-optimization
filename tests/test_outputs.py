@@ -4,6 +4,7 @@ def test_health(client):
     assert response.status_code == 200
     assert response.get_json() == {"status": "ok"}
 
+
 def test_list_users(client):
     response = client.get("/users/")
 
@@ -19,7 +20,6 @@ def test_list_users(client):
     assert "last_name" in user
 
 
-
 def test_get_user_by_id_success(client):
     response = client.get("/users/1")
 
@@ -27,7 +27,7 @@ def test_get_user_by_id_success(client):
     assert response.get_json() == {
         "id": 1,
         "first_name": "John",
-        "last_name": "Shinggu"
+        "last_name": "Shinggu",
     }
 
 

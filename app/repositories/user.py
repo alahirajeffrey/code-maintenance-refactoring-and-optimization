@@ -1,7 +1,7 @@
 class FakeUserRepository:
     def __init__(self):
         self._users = [
-            {"id": 1, "first_name": "John", "last_name": "Shinggu" },
+            {"id": 1, "first_name": "John", "last_name": "Shinggu"},
             {"id": 2, "first_name": "Shinggu", "last_name": "John"},
         ]
 
